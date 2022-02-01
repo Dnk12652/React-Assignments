@@ -1,1 +1,62 @@
+.pagecontent{
+    width: auto;
+    height:auto;
+}
+.row{
+    display:block;
+    width:auto;
 
+}
+.yellow,.red,.blue{
+    display:flex;
+}
+
+.yellow .col{
+   
+    background-color: yellow;
+    height: 200px;
+    margin:10px;
+}
+
+.red .col{
+   
+    
+    background-color:red;
+    height: 200px;
+    margin:10px;
+}
+
+.blue .col{
+   
+
+    background-color:blue;
+    height: 200px;
+    margin:10px;
+}
+/*---------min width :1024-----------*/
+@media screen and (min-device-width:1024px){
+   
+    .red .col,.blue .col,.yellow .col{
+        flex:1 1 auto;
+    }
+
+    
+}
+/*-----------minwidth:765px------------*/
+@media screen and (min-device-width:765px) and (max-device-width:1024px){
+    
+    .red .col,.yellow .col{
+        flex:1 1 auto;
+    }
+    .blue{
+        flex-direction: column;
+    }
+}
+/*-----------minwidth:320px------------*/
+@media screen and (min-device-width:320px) and (max-device-width:765px){
+   
+    .red,.yellow,.blue{
+        flex-direction: column;
+    }
+   
+}

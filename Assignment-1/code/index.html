@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width">
-<title>Designing Web App using HTML/CSS/REACT</title>
-<link rel="stylesheet" href="style.css" />
-<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-<!-- Don't use this in production: -->
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Designing Web App using HTML/CSS/REACT</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+  </head>
+  <body>
     <div id="root"></div>
     <script type="text/babel">
-//React Code here
- ReactDOM.render(<div></div>,document.getElementById('root'));
 
-</script>
-<!--
+      //React Code here
+      var Resposiveui=({heading})=>{
+        return (
+          <div className='pagecontent'>
+            <h1>{heading}</h1>
+          <div className='row yellow '>
+            <div className='col'></div>
+            <div className='col'></div>
+          </div>
+          <div className='row red'>
+            <div className='col'></div>
+
+          </div>
+          <div className='row blue'>
+            <div className='col'></div>
+            <div className='col'></div>
+            <div className='col'></div>
+          </div>
+        </div>
+
+        )
+
+      }
+       ReactDOM.render(<Resposiveui heading='Responsive Ui using Functional Component'></Resposiveui>,document.getElementById('root'));
+    </script>
+
+    <!--
      Note: this page is a great way to try React but it's not suitable for production.
      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
      Read this section for a production-ready setup with JSX:
@@ -27,5 +51,5 @@
      You can also use React without JSX, in which case you can remove Babel:
      https://reactjs.org/docs/react-without-jsx.html
    -->
-</body>
+  </body>
 </html>
