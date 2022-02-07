@@ -6,7 +6,7 @@ function App(props) {
 
   return (
     <div className="container">
-      <div class="parent">
+        <div class="parent">
         <div className='profile-img'>
         <img src={employee.profileImg} alt="the person profile"></img>
       
@@ -34,6 +34,7 @@ function App(props) {
           <h2>{employee.age}</h2>
         </div>
       </div>
+    
     </div>
   );
 }
